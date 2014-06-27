@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Metadata.Gaph.Model.Table">
+    <Position X="9.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACABAAAAAAAAAAAACEAAAAQAAAAA=</HashCode>
+      <FileName>Table.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Column" />
+      <Property Name="Keys" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.TableSpace">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAiAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TableSpace.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Space" />
+      <Property Name="Tables" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.Database">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAABAgABAAA=</HashCode>
+      <FileName>Database.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="TableSpaces" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.Space" Collapsed="true">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Space.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.Key">
+    <Position X="9.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Key.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="KeyColumns" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.PrimaryKey">
+    <Position X="9.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PrimaryKey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.ForeignKey">
+    <Position X="7.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ForeignKey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.PartitionKey">
+    <Position X="11.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PartitionKey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.Mainframe">
+    <Position X="4" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAQAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mainframe.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Partitions" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.MainframePartition">
+    <Position X="3.75" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAEAAAAAAAAA=</HashCode>
+      <FileName>MainframePartition.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="DB2SubSystems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.DB2Subsystem">
+    <Position X="0.5" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAEAAAAAEAAAAAAAAAAwAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DB2Subsystem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Databases" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.Column">
+    <Position X="12" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAIBAgAAAAJAAABAAAAAAAAAAAAAAQAAEAA=</HashCode>
+      <FileName>Column.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.SocialSecurityAdministration">
+    <Position X="3.5" Y="10.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAABAAAA=</HashCode>
+      <FileName>SocialSecurityAdministration.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Mainframe" />
+      <Property Name="DirectoryServer" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.ActiveDirectoryForest">
+    <Position X="7.75" Y="15" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ActiveDirectoryForest.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Domain" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.ActiveDirectoryDomain">
+    <Position X="10" Y="10" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>ActiveDirectoryDomains.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="OrganizationalUnit" />
+      <Property Name="Server" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.ActiveDirectoryOrganizationalUnit">
+    <Position X="11" Y="13.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ActiveDirectoryOrganizationalUnit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.Server">
+    <Position X="12" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Server.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Database" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.IDirectoryServer">
+    <Position X="7" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DirectoryServer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.ActiveDirectoryServer">
+    <Position X="7" Y="12" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ActiveDirectoryServer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ActiveDirectoryForest" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Metadata.Gaph.Model.AliasName">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AliasName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
